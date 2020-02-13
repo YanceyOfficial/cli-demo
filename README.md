@@ -1,6 +1,6 @@
 # cli demo
 
-这是我写的一个脚手架的 demo, 进入到工程后, 使用 `yarn link` 将该项目的 bin 添加到 `node_module` 中, 这样你就可以愉快的在终端食用 cli 了.
+这是我写的一个脚手架的 demo, 进入到工程后, 使用 `yarn link` 将该项目的 bin 添加到 `node_module` 中, 这样你就可以愉快的在终端使用 cli 了.
 
 ## 用法
 

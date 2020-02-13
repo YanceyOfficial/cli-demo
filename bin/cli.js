@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 
 const program = require('commander')
+const chalk = require('chalk')
 
-program.version('@vue/cli 4.3.2').usage('<command> [options]')
+program.version('yancey-cli 1.0.0').usage('<command> [options]')
 
 program
   .command('create <app-name>')
@@ -37,8 +38,6 @@ program
 program.arguments('<command>').action(cmd => {
   program.outputHelp()
   console.log(`  ` + chalk.red(`Unknown command ${chalk.yellow(cmd)}.`))
-  console.log()
-  suggestCommands(cmd)
 })
 
 // add some useful info on help
@@ -48,4 +47,9 @@ program.on('--help', () => {
   console.log()
 })
 
-program.commands.forEach(c => c.on('--help', () => console.log()))
+program.parse(process.argv)
+
+// 未传入参数, 返回 output
+if (!process.argv.slice(2).length) {
+  program.outputHelp()
+}

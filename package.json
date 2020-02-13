@@ -2,6 +2,9 @@
   "name": "cli-demo",
   "version": "1.0.0",
   "main": "index.js",
+  "bin": {
+    "cli": "./bin/cli.js"
+  },
   "repository": "git@github.com:YanceyOfficial/cli-demo.git",
   "author": "Yancey Leo <yanceyofficial@gmail.com>",
   "license": "MIT",

@@ -6,7 +6,13 @@
   "author": "Yancey Leo <yanceyofficial@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "boxen": "^4.2.0",
     "chalk": "^3.0.0",
-    "inquirer": "^7.0.4"
+    "clear": "^0.1.0",
+    "commander": "^4.1.1",
+    "figlet": "^1.2.4",
+    "inquirer": "^7.0.4",
+    "log-symbols": "^3.0.0",
+    "ora": "^4.0.3"
   }
 }
